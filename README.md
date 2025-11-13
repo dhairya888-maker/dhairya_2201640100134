@@ -7,9 +7,6 @@
 - UI: Start/Stop, Toggle Raw/Edge, FPS overlay.
 - Web viewer (TypeScript) that displays a sample processed frame and shows FPS/resolution.
 
-## Screenshots / GIF
-(TODO: Drop in screenshots or a GIF showing raw vs processed feed before final submission.)
-
 ## Repo structure
 /app
 /jni
@@ -47,24 +44,6 @@ CMakeLists.txt
 Check commit history for step-by-step development. Commits are small and descriptive (see commit messages).  
 For a suggested roadmap, see `docs/development_plan.md`.
 
-## Final checklist before submission
-- Public GitHub repo (or shareable private) with correct permissions.
-- Commits show incremental development — no single giant final commit.
-- README filled with screenshots/GIF and instructions.
-- NDK/OpenCV build instructions and CMake paths documented.
-- App runs on real device and shows processed frames ≥ 10–15 FPS.
-- Web viewer displays sample base64 image and shows FPS/resolution.
-- Zip a release or tag final commit: v1.0.
 
-## Commit history notes
-Check commit history for step-by-step development. Commits are small and descriptive (see commit messages).
 
-## Final checklist before submission
-- Public GitHub repo (or shareable private) with correct permissions.
-- Commits show incremental development — no single giant final commit.
-- README filled with screenshots/GIF and instructions.
-- NDK/OpenCV build instructions and CMake paths documented.
-- App runs on real device and shows processed frames ≥ 10–15 FPS.
-- Web viewer displays sample base64 image and shows FPS/resolution.
-- Zip a release or tag final commit: v1.0.
 
