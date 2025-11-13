@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">EdgeViewer</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="toggle_raw">Raw</string>
+    <string name="toggle_processed">Processed</string>
+    <string name="fps_label">FPS: %1$.1f</string>
+</resources>
+
