@@ -1,0 +1,20 @@
+I need a full scaffolded repository for an Android + OpenCV (C++) + OpenGL ES 2.0 real-time edge detection viewer plus a minimal TypeScript web viewer. Requirements:
+
+Android app in Kotlin (or Java) using Camera2 and TextureView, capturing frames to a direct ByteBuffer and forwarding to native via JNI.
+
+Native C++ (NDK) module with CMake: convert YUV → RGBA in native, perform grayscale + Gaussian blur + Canny using OpenCV 4.x, reuse cv::Mat to avoid allocations. Expose nativeInit(width,height), nativeProcessFrame(long addrYuv,bool edgeMode), nativeRelease().
+
+OpenGL ES 2.0 renderer that receives RGBA bytes and renders a fullscreen texture; include shader code (vertex + fragment). Add FPS measurement and toggle for raw/processed.
+
+TypeScript web viewer that displays a static base64 processed frame and shows FPS/resolution overlay. Buildable with tsc.
+
+Provide CMakeLists and Gradle config to compile native libs using NDK.
+
+Include a README.md with setup instructions (NDK, OpenCV), screenshots placeholder, and architecture explanation.
+
+Create a clear commit plan with ~10 commits: repo skeleton, camera, JNI stubs, OpenCV processing, GL renderer, UI toggles, perf optimizations, TypeScript viewer, README, final polish. Provide recommended commit messages.
+
+Output: a ZIP (or repository tree) with code files and the exact content for README, CMakeLists, Kotlin/Java Activity, JNI headers, C++ processing file with OpenCV code, GL renderer class, TypeScript file and HTML, plus list of 10 commit messages. Make code minimal but runnable (document where to place OpenCV SDK or how to modify CMake to point to OpenCV). Use small, well-commented examples for each part.
+
+(If ChatGPT asks questions, ignore — instead generate a best-effort complete scaffold.)
+
